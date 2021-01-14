@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Currency converter</title>
+</head>
+<body>
+<form>
+  Eastern Caribbean Dollar: <input type="number" id="value1"><br><br>
+
+  Convert to: <select id="operator">
+    <option id="mon" value="yen" onchange="currency()">Japanese Yen</option>
+    <option id="mon" value="cad" onchange="currency()"> Canadian dollar</option>
+    <option id="mon" value="usd" onchange="currency()">United states dollar</option>
+    <option id="mon" value="pound" onchange="currency()">UK pound</option>
+    <option id="mon" value="euro" onchange="currency()">Euros</option>
+    </select>
+    <button type="button" onclick="calc()">Convert</button>
+    <hr>
+    <div id="result"></div>
+</form>
+</body>
+<script src="main.js"></script>
+</html>
